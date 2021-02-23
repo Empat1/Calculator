@@ -1,0 +1,747 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(date 1614112288818)
++++ app/src/main/res/layout/activity_main.xml	(date 1614112288818)
+@@ -0,0 +1,307 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".MainActivity"
++    android:padding="5dp">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:orientation="vertical"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent">
++
++
++        <TableLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:layout_weight="1">
++
++
++            <TextView
++                android:id="@+id/textView"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="0"
++                android:textSize="40dp"
++                android:paddingTop="50dp"
++                android:paddingBottom="50dp" />
++
++
++            <TableRow
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:layout_weight="1">
++
++                <Button
++                    android:id="@+id/buttonEE"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:backgroundTint="@color/button_color3"
++                    android:text="ЕЕ"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonAllDel"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:backgroundTint="@color/button_color3"
++                    android:text="C"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonDel"
++
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="←"
++                    android:backgroundTint="@color/button_color3"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonPlus"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="+"
++                    android:backgroundTint="@color/button_color"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++            </TableRow>
++
++            <TableRow
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:layout_weight="1">
++
++                <Button
++                    android:id="@+id/button7"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="7"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/button8"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="8"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/button9"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="9"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonMinus"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="-"
++                    android:backgroundTint="@color/button_color"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++            </TableRow>
++
++            <TableRow
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:layout_weight="1">
++
++                <Button
++                    android:id="@+id/button4"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="4"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/button5"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="5"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/button6"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="6"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonMultiply"
++                    android:layout_width="wrap_content"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="*"
++                    android:backgroundTint="@color/button_color"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++            </TableRow>
++
++            <TableRow
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:layout_weight="1">
++
++                <Button
++                    android:id="@+id/button1"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="1"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/button2"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="2"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/button3"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="3"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonDivide"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="/"
++                    android:backgroundTint="@color/button_color"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++            </TableRow>
++
++            <TableRow
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:layout_weight="1">
++
++                <Button
++                    android:id="@+id/buttonChange"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_weight="1"
++                    android:text="+/-"
++                    android:layout_marginEnd="5dp"
++                    android:layout_marginStart="5dp"
++                    android:backgroundTint="@color/button_color3"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/button0"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="0"
++                    android:backgroundTint="@color/button_color2"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonComma"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text=","
++                    android:backgroundTint="@color/button_color3"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++
++                <Button
++                    android:id="@+id/buttonEqually"
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_marginStart="5dp"
++                    android:layout_marginEnd="5dp"
++                    android:layout_weight="1"
++                    android:text="="
++                    android:backgroundTint="@color/button_color"
++                    android:textColor="@color/text_color"
++                    android:textSize="30sp" />
++            </TableRow>
++        </TableLayout>
++    </LinearLayout>
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/themes.xml	(date 1613759506850)
++++ app/src/main/res/values/themes.xml	(date 1613759506850)
+@@ -0,0 +1,24 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.Сalculator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/purple_500</item>
++        <item name="colorPrimaryVariant">@color/purple_700</item>
++        <item name="colorOnPrimary">@color/white</item>
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/black</item>
++        <item name="colorSecondaryVariant">@color/teal_700</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <item name="colorAccent">@color/black</item>
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++
++    <style name="PurpleButton" parent="@style/Widget.AppCompat.Button.Colored">
++        <item name="background">@color/black</item>
++        <item name="colorButtonNormal">#1a237e</item>
++        <item name="colorControlHighlight">#673ab7</item>
++        <item name="color">@color/black</item>
++    </style>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/Size.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/Size.xml	(date 1613760124725)
++++ app/src/main/res/values/Size.xml	(date 1613760124725)
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <integer name="padding_left">5</integer>
++    <integer name="size_text">5</integer>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/colors.xml	(date 1614112288825)
++++ app/src/main/res/values/colors.xml	(date 1614112288825)
+@@ -0,0 +1,21 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <color name="purple_200">#FFBB86FC</color>
++    <color name="purple_500">#FF6200EE</color>
++    <color name="purple_700">#FF3700B3</color>
++    <color name="teal_200">#FF03DAC5</color>
++    <color name="teal_700">#FF018786</color>
++    <color name="black">#FF000000</color>
++    <color name="white">#FFFFFFFF</color>
++
++    <color name="text_color">#FFFFFF</color>
++
++    <color name="button_color3">#FF7F50</color>
++    <color name="button_color2">#FFA07A</color>
++    <color name="button_color">#FF6347</color>
++
++
++    <!--    <color name="button_color3">#FF6347</color>-->
++    <!--    <color name="button_color2">#FFA07A</color>-->
++    <!--    <color name="button_color">#FF4500</color>-->
++</resources>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(date 1614094641453)
++++ .idea/gradle.xml	(date 1614094641453)
+@@ -0,0 +1,22 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="testRunner" value="PLATFORM" />
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="1.8" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++        <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(date 1613142248063)
++++ app/src/main/res/values/strings.xml	(date 1613142248063)
+@@ -0,0 +1,3 @@
++<resources>
++    <string name="app_name">Сalculator</string>
++</resources>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(date 1613142250073)
++++ app/src/main/AndroidManifest.xml	(date 1613142250073)
+@@ -0,0 +1,21 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.example.alculator">
++
++    <application
++        android:allowBackup="true"
++        android:icon="@mipmap/ic_launcher"
++        android:label="@string/app_name"
++        android:roundIcon="@mipmap/ic_launcher_round"
++        android:supportsRtl="true"
++        android:theme="@style/Theme.Сalculator">
++        <activity android:name=".MainActivity">
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++
++                <category android:name="android.intent.category.LAUNCHER" />
++            </intent-filter>
++        </activity>
++    </application>
++
++</manifest>
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(date 1613142247738)
++++ build.gradle	(date 1613142247738)
+@@ -0,0 +1,24 @@
++// Top-level build file where you can add configuration options common to all sub-projects/modules.
++buildscript {
++    repositories {
++        google()
++        jcenter()
++    }
++    dependencies {
++        classpath "com.android.tools.build:gradle:4.1.2"
++
++        // NOTE: Do not place your application dependencies here; they belong
++        // in the individual module build.gradle files
++    }
++}
++
++allprojects {
++    repositories {
++        google()
++        jcenter()
++    }
++}
++
++task clean(type: Delete) {
++    delete rootProject.buildDir
++}
+\ No newline at end of file
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.name	(date 1613142257190)
++++ .idea/.name	(date 1613142257190)
+@@ -0,0 +1,1 @@
++Сalculator
+\ No newline at end of file
+Index: app/src/main/java/com/example/alculator/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/alculator/MainActivity.java	(date 1614112288831)
++++ app/src/main/java/com/example/alculator/MainActivity.java	(date 1614112288831)
+@@ -0,0 +1,189 @@
++package com.example.alculator;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.util.Log;
++import android.view.View;
++import android.widget.Button;
++import android.widget.TextView;
++
++public class MainActivity extends AppCompatActivity implements View.OnClickListener {
++
++    Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9;
++    Button buttonAllDel, buttonDel, buttonEE, buttonPlus, buttonMinus, buttonDivide, buttonEqually, buttonComma, buttonChange, buttonMultiply;
++    TextView textView;
++    double numBuffer = 0.0;
++    int operations;
++    String s = "";
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_main);
++
++        textView = findViewById(R.id.textView);
++
++        button0 = findViewById(R.id.button0);
++        button1 = findViewById(R.id.button1);
++        button2 = findViewById(R.id.button2);
++        button3 = findViewById(R.id.button3);
++        button4 = findViewById(R.id.button4);
++        button5 = findViewById(R.id.button5);
++        button6 = findViewById(R.id.button6);
++        button7 = findViewById(R.id.button7);
++        button8 = findViewById(R.id.button8);
++        button9 = findViewById(R.id.button9);
++
++        buttonAllDel = findViewById(R.id.buttonAllDel);
++        buttonDel = findViewById(R.id.buttonDel);
++        buttonEE = findViewById(R.id.buttonEE);
++        buttonPlus = findViewById(R.id.buttonPlus);
++        buttonMinus = findViewById(R.id.buttonMinus);
++        buttonMultiply = findViewById(R.id.buttonMultiply);
++        buttonDivide = findViewById(R.id.buttonDivide);
++        buttonEqually = findViewById(R.id.buttonEqually);
++        buttonComma = findViewById(R.id.buttonComma);
++        buttonChange = findViewById(R.id.buttonChange);
++
++        button0.setOnClickListener(this);
++        button1.setOnClickListener(this);
++        button2.setOnClickListener(this);
++        button3.setOnClickListener(this);
++        button4.setOnClickListener(this);
++        button5.setOnClickListener(this);
++        button6.setOnClickListener(this);
++        button7.setOnClickListener(this);
++        button8.setOnClickListener(this);
++        button9.setOnClickListener(this);
++
++        buttonAllDel.setOnClickListener(this);
++        buttonDel.setOnClickListener(this);
++        buttonEE.setOnClickListener(this);
++        buttonPlus.setOnClickListener(this);
++        buttonMinus.setOnClickListener(this);
++        buttonMultiply.setOnClickListener(this);
++        buttonDivide.setOnClickListener(this);
++        buttonEqually.setOnClickListener(this);
++        buttonComma.setOnClickListener(this);
++        buttonChange.setOnClickListener(this);
++
++
++    }
++
++    @Override
++    public void onClick(View view) {
++
++        s = textView.getText().toString();
++        if ("Деление на 0".equals(s)) s = "";
++        if (s.equals("0")) s = "";
++
++        switch (view.getId()) {
++            case R.id.button0:
++                s += "0";
++                break;
++            case R.id.button1:
++                s += "1";
++                break;
++            case R.id.button2:
++                s += "2";
++                break;
++            case R.id.button3:
++                s += "3";
++                break;
++            case R.id.button4:
++                s += "4";
++                break;
++            case R.id.button5:
++                s += "5";
++                break;
++            case R.id.button6:
++                s += "6";
++                break;
++            case R.id.button7:
++                s += "7";
++                break;
++            case R.id.button8:
++                s += "8";
++                break;
++            case R.id.button9:
++                s += "9";
++                break;
++            case R.id.buttonComma:
++                if (s.equals("")) s += "0";
++                if (s.indexOf(',') == -1) s += ",";
++                break;
++            case R.id.buttonDel:
++                if (!s.equals("")) s = s.substring(0, s.length() - 1);
++                break;
++            case R.id.buttonAllDel:
++                s = "";
++                numBuffer = 0;
++                break;
++            case R.id.buttonPlus:
++                numBuffer = strToDouble(s);
++                operations = 1;
++                s = "";
++                break;
++            case R.id.buttonMinus:
++                numBuffer = strToDouble(s);
++                operations = 2;
++                s = "";
++                break;
++            case R.id.buttonMultiply:
++                numBuffer = strToDouble(s);
++                operations = 3;
++                s = "";
++                break;
++            case R.id.buttonDivide:
++                numBuffer = strToDouble(s);
++                operations = 4;
++                s = "";
++                break;
++            case R.id.buttonEqually:
++                s = couting(s);
++                break;
++            case R.id.buttonChange:
++
++
++        }
++        textView.setText(s);
++    }
++
++    private Double strToDouble(String s) {
++        if (s.equals("")) return 0.0;
++        if (s.substring(s.length() - 1, s.length()) == ",") s += "0";
++        return Double.parseDouble(s.replace(',', '.'));
++    }
++
++    private String couting(String s) {
++        double num = strToDouble(s);
++        Log.d("MainActicity", num + " " + numBuffer + " операция " + operations);
++        switch (operations) {
++            case 1:
++                return String.valueOf(numBuffer + num);
++            case 2:
++                return String.valueOf(numBuffer - num);
++            case 3:
++                return String.valueOf(numBuffer * num);
++            case 4:
++                if (num == 0) return "Деление на 0";
++                return String.valueOf(numBuffer / num);
++        }
++
++        return "";
++    }
++
++    private String inputDisplay() {
++        return textView.getText().toString();
++    }
++
++    private void outputDisplay(String s) {
++        if (s.length() < 10) {
++            textView.setText(s);
++        }
++    }
++
++
++}
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1613142257295)
++++ .idea/compiler.xml	(date 1613142257295)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/values-night/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-night/themes.xml	(date 1613142249952)
++++ app/src/main/res/values-night/themes.xml	(date 1613142249952)
+@@ -0,0 +1,16 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.Сalculator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/purple_200</item>
++        <item name="colorPrimaryVariant">@color/purple_700</item>
++        <item name="colorOnPrimary">@color/black</item>
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/teal_200</item>
++        <item name="colorSecondaryVariant">@color/teal_200</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++</resources>
+\ No newline at end of file
