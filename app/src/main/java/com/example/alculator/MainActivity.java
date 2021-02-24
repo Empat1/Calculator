@@ -3,8 +3,8 @@ package com.example.alculator;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9;
-    Button buttonAllDel, buttonDel, buttonEE, buttonPlus, buttonMinus, buttonDivide, buttonEqually, buttonComma, buttonChange, buttonMultiply;
+    Button buttonAllDel, buttonDel, buttonPow, buttonPlus, buttonMinus, buttonDivide, buttonEqually, buttonComma, buttonChange, buttonMultiply;
     TextView textView;
     double num1 = 0.0, num2 = 0.0;
     char operation = '0';
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonAllDel = findViewById(R.id.buttonAllDel);
         buttonDel = findViewById(R.id.buttonDel);
-        buttonEE = findViewById(R.id.buttonEE);
+        buttonPow = findViewById(R.id.buttonPow);
         buttonPlus = findViewById(R.id.buttonPlus);
         buttonMinus = findViewById(R.id.buttonMinus);
         buttonMultiply = findViewById(R.id.buttonMultiply);
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonAllDel.setOnClickListener(this);
         buttonDel.setOnClickListener(this);
-        buttonEE.setOnClickListener(this);
+        buttonPow.setOnClickListener(this);
         buttonPlus.setOnClickListener(this);
         buttonMinus.setOnClickListener(this);
         buttonMultiply.setOnClickListener(this);
@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view){
+        Log.d("MainPow", ((Button) view).getId() + " " + R.id.buttonPow);
 
         s = textView.getText().toString();
         if(s.equals("0")) s="";
@@ -96,6 +97,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonComma:
                 if (s.indexOf(',') == -1) s += ",";
                 break;
+            case R.id.buttonChange:
+                if (s.equals("")) return;
+                if (s.charAt(0) == '-') s = s.substring(1, s.length());
+                else s = "-" + s;
+                break;
             case R.id.buttonDel:
                 if (!s.equals("")) s = s.substring(0, s.length() - 1);
                 break;
@@ -104,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 num1 = 0;
                 num2 = 0;
                 break;
+            case R.id.buttonPow:
             case R.id.buttonPlus:
             case R.id.buttonMinus:
             case R.id.buttonMultiply:
@@ -134,6 +141,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return "0";
             }
             return String.valueOf(num1 / num2);
+        } else if (operations == '^') {
+            return String.valueOf(Math.pow(num1, num2));
         }
         return "0";
     }
